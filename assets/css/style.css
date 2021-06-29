@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css?family=Candal);
+
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
+@import url(https://fonts.googleapis.com/css?family=Monoton);
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body { 
+  width: 100%;
+  height: 100%;;
+  background: #0D0221; 
+  color: #fff; 
+  position: relative;
+}
+
+p{
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+}
+
+.nav-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-menu {
+  width: 100%;
+  height: 100vh;
+  top: -100vh;
+  position: fixed;
+  /* background-color: #241734; */
+  background-color: #190826;
+  border-radius: 100%;
+  /* border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%; */
+  z-index: 1000;
+  transition: all 750ms ease-in-out;
+  /* cubic-bezier(1,0,0,1); */
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  width: 20%;
+  font-size: 5rem;
+  font-weight: 700;
+  padding: 2rem;
+}
+
+.nav-menu.open{
+  top:0;
+  border-radius: initial;
+}
+
+.retro {
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.1px #f1f1f1;
+  font-family: 'Righteous', cursive;
+}
+
+.retro h1{
+  position: relative;
+  font-size: 10rem;
+}
+
+.retro h6{
+  position: relative;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.windows .retro {
+  -webkit-text-stroke: 4px #f1f1f1;
+}
+
+.retro-body,
+.nav-link:hover {
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: -webkit-linear-gradient(#C3BFB4 0%, #FDFCFA 50%, #E8E7E5 51%, #757172 52%, #E8E9DB 100%);
+  -webkit-filter: drop-shadow(2px 2px 15px #3F59F4);
+  filter: drop-shadow(2px 2px 15px #3F59F4);
+}
+
+
+.fa{
+  display: inline-block;
+  font:normal;
+}
+
+.fa-bars,
+.fa-minus-square.open {
+  display:inline-block;
+  z-index: 1500;
+}
+
+.fa-bars.open,
+.fa-minus-square {
+  display: none;
+  z-index: 1500;
+}
+
+.fa-bars,
+.fa-minus-square{
+  padding: 5rem;
+}
+
+.fa-bars::before,
+.fa-minus-square::before{
+  font-size: 5rem; 
+  padding-right: 10px;
+}
+
+.fa-social::before{
+  font-size: 30px; 
+  padding-right: 10px;
+}
