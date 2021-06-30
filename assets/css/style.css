@@ -54,26 +54,29 @@ header {
   top: -100vh;
   right:-200vh;
   position: fixed;
+  background: .3;
+  background-image: url(/assets/images/nav-bg-2.png);
+  background-size: ;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
   background-color: #190826;
   border-radius: 100%;
-  z-index: 1000;
   transition: all 750ms ease-in-out;
-  /* cubic-bezier(1,0,0,1); */
+  z-index: 1500;
 }
 
 .nav-bg{
-  bottom: 0;
-  background-image: url(/assets/images/nav-bg.png);
-  background-repeat: no-repeat;
-  opacity: .5;
+  display: inline-block;
+  height: 100%;
   width: 100%;
-  z-index: 1500;
+  position: absolute;
+  opacity: .5;
 }
 
 .nav-list {
   list-style: none;
   display: flex;
-  flex-direction: row;
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -157,13 +160,13 @@ header {
 .fa-bars,
 .fa-minus-square.open {
   display:inline-block;
-  z-index: 1500;
+  z-index: 1501;
 }
 
 .fa-bars.open,
 .fa-minus-square {
   display: none;
-  z-index: 1500;
+  z-index: 1501;
 }
 
 .fa-bars,
