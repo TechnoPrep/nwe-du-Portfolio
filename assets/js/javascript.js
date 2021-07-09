@@ -4,9 +4,14 @@ $(document).ready(function(){
         $('.nav-menu').toggleClass('open');
         $('.fa-bars').toggleClass('open');
         $('.fa-minus-square').toggleClass('open');
-        if($('.nav-bg').css('visibility')==='hidden'){
-            $('.nav-bg').css('visibility','visible');
-        } else $('.nav-bg').css('visibility','hidden');
     });
 });
 
+$(document).ready(function(){
+    $('.nav-link').on('click', function(){
+        $('.nav-icon').toggleClass('open');
+        $('.nav-menu').toggleClass('open');
+        $('.fa-bars').toggleClass('open');
+        $('.fa-minus-square').toggleClass('open');
+    });
+});
