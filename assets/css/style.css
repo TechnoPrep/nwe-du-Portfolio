@@ -21,16 +21,21 @@ body {
   height: 100%;;
   background: #0D0221; 
   color: #fff; 
-  position: relative;
+  /* position: relative; */
   
+}
+
+
+a {
+  text-decoration: none;
 }
 
 p{
   font-size: 2rem;
 }
 
-a {
-  text-decoration: none;
+ul{
+  list-style: none;
 }
 
 img {
@@ -58,6 +63,7 @@ img {
 header {
   width: 100%;
   height: 100vh;
+  display: inline;
 }
 
 .nav-icon {
@@ -77,7 +83,6 @@ header {
 }
 
 .nav-list {
-  list-style: none;
   display: flex;
   width: 100%;
   height: 100%;
@@ -100,20 +105,20 @@ header {
 
 /* Hero Image */
 
-.me {
-  display: inline-block;
-   width: 300px;
-   height: 300px;
-   background-size: cover;
-   background-image: url(/assets/images/featured_image.JPG);
-   z-index: -1;
-   opacity: .7;
-   justify-content: center;
+.profile-image {
+  position: relative;
+  display: block;
+  width: 500px;
+  height: 500px;
+  background-image: url(/assets/images/featured_image.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 3rem;
  }
- 
 
 /* Retro Fonts */
 .retro {
+  /* flex-wrap: wrap; */
   text-transform: uppercase;
   text-align: center;
   -webkit-text-fill-color: transparent;
@@ -121,24 +126,26 @@ header {
   font-family: 'Righteous', cursive;
 }
 
-.retro h1{
+h1,
+h3,
+h4,
+h6 {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
-  position: relative;
+}
+
+h1{
   font-size: 10rem;
 }
 
-.retro h3{
+h3{
   font-size: 5rem;
 }
 
-.retro h6{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  text-align: center;
+h4,
+h6{
   font-size: 3rem;
 }
 
@@ -156,46 +163,166 @@ header {
   filter: drop-shadow(2px 2px 15px #3F59F4);
 }
 
+.container {
+  display: block;
+  position: absolute;
+}
+
+/* Column and Row Alignments */
 .row {
   display: flex;
   flex-direction: row;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   padding-left: 5%
 }
 
-/* Aside */
+.p-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column-main {
+  max-width: 100%;
+}
+
+.column-sec {
+  flex: 0 0 50%;
+  max-width: 40%;
+}
+
+.column-main,
+.column-sec {
+  padding: 2rem;
+  justify-self: center;
+  position: relative;
+}
+
+/* Aside - Float Left*/
 .left {
-  width: 30%;
+  min-width: 30%;
+  max-width: 30%;
   display: flex;
   justify-content: left;
   border-right: 5px solid ivory;
 }
 
-/* My Projects */
+/* About Me CSS */
+
+.about p{
+  padding: 2rem;
+}
+
+/* Project Section CSS */
+
+.main-project{
+  justify-content: center;
+  flex: 0 0 50%;
+  max-width: 100%;
+  padding: 2rem;
+  position: relative;
+}
+
+.sec-project{
+  display: flex;
+  justify-content: center;
+}
+
+.main-project .text-block{
+  bottom: 20px;
+  right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.column-sec .text-block{
+  bottom: 20px;
+  right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text-block {
+  position: absolute;
+  background-color: #0D0221;
+  color: #fff;
+  filter: drop-shadow(2px 2px 5px #3F59F4);
+}
+
+.main-project img,
+.sec-project img {
+  border: 5px solid;
+  border-color: #fc459f;
+  filter: drop-shadow(2px 2px 6px #fc459f);
+}
+
 .main-project img{
-  width:1000px;
+  max-width: 900px;
 }
 
 .sec-project img {
-  width: 25%;
-  float: right;
+  max-width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center                                                            ;
+
 } 
 
-.fa{
-  display: inline-block;
-  font:normal;
+/* Contact Me */
+
+.contact {
+  display: inline;
 }
 
+.contact ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+
+.contact-links li {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 20%;
+  padding: 2rem;
+}
+
+/* Footer CSS */
+
+.to-top{
+  border-top: 5px dotted ivory;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 5%;
+}
+
+/* Font Awesome CSS */
+.fa{
+  display: inline-block;
+  font: normal;
+}
+
+/* Controlled by JQuery for Menu Icon */
+
+/* Show fa-bars and fa-minus-square depending on state
+ * via Jquery 
+*/
 .fa-bars,
 .fa-minus-square.open {
-  display:inline-block;
+  display: inline-block;
   z-index: 1501;
 }
 
+.fa-minus-square.open {
+  position: fixed;
+}
+
+/* Hide fa-bars and fa-minus-square depending on state
+ * via Jquery
+*/
 .fa-bars.open,
 .fa-minus-square {
   display: none;
@@ -213,7 +340,111 @@ header {
   padding-right: 10px;
 }
 
-.fa-social::before{
-  font-size: 30px; 
+/* Contact Me FA CSS */
+.fa-phone::before,
+.fa-envelope::before,
+.fa-facebook-official::before,
+.fa-github::before,
+.fa-chevron-up::before {
+  font-size: 5rem; 
   padding-right: 10px;
+  color: #fc459f;
+  filter: drop-shadow(2px 2px 1px #fcd458);
+  opacity: .8;
+}
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 1067px) {
+  h4{
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .left {
+    max-width: 30%;
+  }
+
+  .retro h4 {
+    -webkit-text-fill-color: #fff;
+  }
+  
+  h3{
+    font-size: 4rem;
+    word-wrap: break-word;
+  }
+  
+  h4{
+    font-size: 1.8rem;
+  }
+
+
+}
+
+@media screen and (max-width: 786px) {
+  
+  .retro h4 {
+    -webkit-text-fill-color: #fff;
+  }
+  
+  h3{
+    font-size: 4rem;
+    word-wrap: break-word;
+  }
+  
+  h4{
+    font-size: 1.8rem;
+  }
+
+  .left {
+    max-width: 30%;
+  }
+
+  .nav-list {
+    font-size: 3rem;
+  }
+
+}
+
+@media screen and (max-width: 690px) {
+
+  .row {
+    padding-left: 0%;
+    flex-direction: column;
+  }
+  
+  .left {
+    float: none;
+    max-width: 100%;
+    flex-direction: column;
+    border-right: 0px;
+    border-bottom: 5px solid ivory;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 20%;
+    font-size: 5rem;
+  }
+
+  .main-project .text-block,
+  .column-sec .text-block,
+  .text-block {
+    visibility: hidden;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+
+  h1{
+    font-size: 8rem;
+  }
+
 }
