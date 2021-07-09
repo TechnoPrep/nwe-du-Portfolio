@@ -22,6 +22,7 @@ body {
   background: #0D0221; 
   color: #fff; 
   position: relative;
+  
 }
 
 p{
@@ -38,6 +39,22 @@ img {
   background-repeat: no-repeat;
 }
 
+/* Background Image */
+.bg{  
+  display: flex;
+  width: 500px;
+  height: 500px;
+  content: "";
+  background-size: cover;
+  background-image: url(/assets/images/nav-bg-2.png);
+  position: fixed;
+  bottom:0;
+  z-index: -1;
+  opacity: .5;
+  justify-content: center;
+}
+
+/* Header and Nav Menu */
 header {
   width: 100%;
   height: 100vh;
@@ -52,26 +69,11 @@ header {
   width: 100%;
   height: 100vh;
   top: -100vh;
-  right:-200vh;
   position: fixed;
-  background: .3;
-  background-image: url(/assets/images/nav-bg-2.png);
-  background-size: ;
-  background-position-x: center;
-  background-position-y: bottom;
-  background-repeat: no-repeat;
   background-color: #190826;
   border-radius: 100%;
   transition: all 750ms ease-in-out;
   z-index: 1500;
-}
-
-.nav-bg{
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  opacity: .5;
 }
 
 .nav-list {
@@ -93,10 +95,24 @@ header {
 
 .nav-menu.open{
   top:0;
-  right:0;
   border-radius: initial;
 }
 
+/* Hero Image */
+
+.me {
+  display: inline-block;
+   width: 300px;
+   height: 300px;
+   background-size: cover;
+   background-image: url(/assets/images/featured_image.JPG);
+   z-index: -1;
+   opacity: .7;
+   justify-content: center;
+ }
+ 
+
+/* Retro Fonts */
 .retro {
   text-transform: uppercase;
   text-align: center;
@@ -111,6 +127,10 @@ header {
   align-items: center;
   position: relative;
   font-size: 10rem;
+}
+
+.retro h3{
+  font-size: 5rem;
 }
 
 .retro h6{
@@ -136,8 +156,24 @@ header {
   filter: drop-shadow(2px 2px 15px #3F59F4);
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 5%
+}
+
+/* Aside */
+.left {
+  width: 30%;
+  display: flex;
+  justify-content: left;
+  border-right: 5px solid ivory;
+}
+
+/* My Projects */
 .main-project img{
-  float: left;
   width:1000px;
 }
 
@@ -148,9 +184,6 @@ header {
   justify-content: center;
   align-items: center                                                            ;
 } 
-
-.my-projects {
-}
 
 .fa{
   display: inline-block;
