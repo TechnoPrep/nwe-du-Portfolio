@@ -51,7 +51,7 @@ img {
   height: 500px;
   content: "";
   background-size: cover;
-  background-image: url("./assets/images/nav-bg-2.png");
+  background-image: url("../images/nav-bg-2.png");
   position: fixed;
   bottom:0;
   z-index: -1;
@@ -110,7 +110,7 @@ header {
   display: block;
   width: 500px;
   height: 500px;
-  background-image: url("./assets/images/featured_image.JPG");
+  background-image: url("../images/featured_image.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 3rem;
