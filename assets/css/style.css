@@ -7,22 +7,24 @@
 
 @import url(https://fonts.googleapis.com/css?family=Monoton);
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-html{
+html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-body { 
+body {
   width: 100%;
-  height: 100%;;
-  background: #0D0221; 
-  color: #fff; 
+  height: 100%;
+  ;
+  background: #0D0221;
+  color: #fff;
   /* position: relative; */
-  
+
 }
 
 
@@ -30,11 +32,11 @@ a {
   text-decoration: none;
 }
 
-p{
+p {
   font-size: 2rem;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
@@ -45,7 +47,7 @@ img {
 }
 
 /* Background Image */
-.bg{  
+.bg {
   display: flex;
   width: 500px;
   height: 500px;
@@ -53,7 +55,7 @@ img {
   background-size: cover;
   background-image: url("../images/nav-bg-2.png");
   position: fixed;
-  bottom:0;
+  bottom: 0;
   z-index: -1;
   opacity: .5;
   justify-content: center;
@@ -65,6 +67,33 @@ header {
   height: 100vh;
   display: inline;
 }
+
+/* Header Styles */
+
+h1,
+h3,
+h4,
+h6 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 10rem;
+}
+
+h3 {
+  font-size: 5rem;
+}
+
+h4,
+h6 {
+  font-size: 3rem;
+}
+
+/* Nav Menu */
 
 .nav-icon {
   display: flex;
@@ -98,8 +127,10 @@ header {
   padding: 2rem;
 }
 
-.nav-menu.open{
-  top:0;
+/* Nav Menu w/ JQuery */
+
+.nav-menu.open {
+  top: 0;
   border-radius: initial;
 }
 
@@ -114,39 +145,16 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 3rem;
- }
+}
 
 /* Retro Fonts */
+
 .retro {
-  /* flex-wrap: wrap; */
   text-transform: uppercase;
   text-align: center;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0.1px #f1f1f1;
   font-family: 'Righteous', cursive;
-}
-
-h1,
-h3,
-h4,
-h6 {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-}
-
-h1{
-  font-size: 10rem;
-}
-
-h3{
-  font-size: 5rem;
-}
-
-h4,
-h6{
-  font-size: 3rem;
 }
 
 .windows .retro {
@@ -163,12 +171,13 @@ h6{
   filter: drop-shadow(2px 2px 15px #3F59F4);
 }
 
+/* Container and Column / Row Alignments */
+
 .container {
   display: block;
   position: absolute;
 }
 
-/* Column and Row Alignments */
 .row {
   display: flex;
   flex-direction: row;
@@ -177,10 +186,10 @@ h6{
   padding-left: 5%
 }
 
-.p-row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.p-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .column-main {
@@ -210,13 +219,13 @@ h6{
 
 /* About Me CSS */
 
-.about p{
+.about p {
   padding: 2rem;
 }
 
 /* Project Section CSS */
 
-.main-project{
+.main-project {
   justify-content: center;
   flex: 0 0 50%;
   max-width: 100%;
@@ -224,19 +233,21 @@ h6{
   position: relative;
 }
 
-.sec-project{
+.sec-project {
   display: flex;
   justify-content: center;
 }
 
-.main-project .text-block{
+/* Image Text Block Styles */
+
+.main-project .text-block {
   bottom: 20px;
   right: 30px;
   padding-left: 30px;
   padding-right: 30px;
 }
 
-.column-sec .text-block{
+.column-sec .text-block {
   bottom: 20px;
   right: 20px;
   padding-left: 20px;
@@ -250,6 +261,8 @@ h6{
   filter: drop-shadow(2px 2px 5px #3F59F4);
 }
 
+/* Project Images */
+
 .main-project img,
 .sec-project img {
   border: 5px solid;
@@ -257,7 +270,7 @@ h6{
   filter: drop-shadow(2px 2px 6px #fc459f);
 }
 
-.main-project img{
+.main-project img {
   max-width: 900px;
 }
 
@@ -265,7 +278,7 @@ h6{
   max-width: 100%;
   display: flex;
 
-} 
+}
 
 /* Contact Me */
 
@@ -273,7 +286,7 @@ h6{
   display: inline;
 }
 
-.contact ul{
+.contact ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -290,7 +303,7 @@ h6{
 
 /* Footer CSS */
 
-.to-top{
+.to-top {
   border-top: 5px dotted ivory;
   display: flex;
   justify-content: center;
@@ -300,7 +313,7 @@ h6{
 }
 
 /* Font Awesome CSS */
-.fa{
+.fa {
   display: inline-block;
   font: normal;
 }
@@ -310,6 +323,7 @@ h6{
 /* Show fa-bars and fa-minus-square depending on state
  * via Jquery 
 */
+
 .fa-bars,
 .fa-minus-square.open {
   display: inline-block;
@@ -323,6 +337,7 @@ h6{
 /* Hide fa-bars and fa-minus-square depending on state
  * via Jquery
 */
+
 .fa-bars.open,
 .fa-minus-square {
   display: none;
@@ -330,23 +345,24 @@ h6{
 }
 
 .fa-bars,
-.fa-minus-square{
+.fa-minus-square {
   padding: 5rem;
 }
 
 .fa-bars::before,
-.fa-minus-square::before{
-  font-size: 5rem; 
+.fa-minus-square::before {
+  font-size: 5rem;
   padding-right: 10px;
 }
 
 /* Contact Me FA CSS */
+
 .fa-phone::before,
 .fa-envelope::before,
 .fa-facebook-official::before,
 .fa-github::before,
 .fa-chevron-up::before {
-  font-size: 5rem; 
+  font-size: 5rem;
   padding-right: 10px;
   color: #fc459f;
   filter: drop-shadow(2px 2px 1px #fcd458);
@@ -356,12 +372,13 @@ h6{
 /* Mobile Responsive */
 
 @media screen and (max-width: 1067px) {
-  h4{
+  h4 {
     font-size: 2.5rem;
   }
 }
 
 @media screen and (max-width: 992px) {
+
   .left {
     max-width: 30%;
   }
@@ -369,32 +386,31 @@ h6{
   .retro h4 {
     -webkit-text-fill-color: #fff;
   }
-  
-  h3{
+
+  h3 {
     font-size: 4rem;
     word-wrap: break-word;
   }
-  
-  h4{
+
+  h4 {
     font-size: 1.8rem;
   }
-
 
 }
 
 @media screen and (max-width: 786px) {
-  
-  .retro h4 {
-    -webkit-text-fill-color: #fff;
-  }
-  
-  h3{
+
+  h3 {
     font-size: 4rem;
     word-wrap: break-word;
   }
-  
-  h4{
+
+  h4 {
     font-size: 1.8rem;
+  }
+
+  .retro h4 {
+    -webkit-text-fill-color: #fff;
   }
 
   .left {
@@ -413,7 +429,7 @@ h6{
     padding-left: 0%;
     flex-direction: column;
   }
-  
+
   .left {
     float: none;
     max-width: 100%;
@@ -443,7 +459,7 @@ h6{
 
 @media screen and (max-width: 550px) {
 
-  h1{
+  h1 {
     font-size: 8rem;
   }
 
