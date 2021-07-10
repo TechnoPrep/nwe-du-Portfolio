@@ -372,8 +372,13 @@ h6 {
 /* Mobile Responsive */
 
 @media screen and (max-width: 1067px) {
+  
   h4 {
     font-size: 2.5rem;
+  }
+  
+  .nav-list {
+    flex-direction: column;
   }
 }
 
@@ -394,6 +399,10 @@ h6 {
 
   h4 {
     font-size: 1.8rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
   }
 
 }
@@ -419,6 +428,7 @@ h6 {
 
   .nav-list {
     font-size: 3rem;
+    flex-direction: column;
   }
 
 }
