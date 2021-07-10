@@ -16,4 +16,4 @@ $(document).ready(function(){
     });
 });
 
-document.getElementById("synthwave").volume = 0.05;
+document.getElementById("synthwave").volume = 0.03;
