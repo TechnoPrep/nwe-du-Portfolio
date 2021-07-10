@@ -157,6 +157,10 @@ h6 {
   font-family: 'Righteous', cursive;
 }
 
+.retro h4 {
+  -webkit-text-fill-color: #f1f1f1;
+}
+
 .windows .retro {
   -webkit-text-stroke: 4px #f1f1f1;
 }
