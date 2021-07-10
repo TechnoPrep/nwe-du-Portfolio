@@ -49,8 +49,8 @@ img {
 /* Background Image */
 .bg {
   display: flex;
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
   content: "";
   background-size: cover;
   background-image: url("../images/nav-bg-2.png");
@@ -139,12 +139,12 @@ h6 {
 .profile-image {
   position: relative;
   display: block;
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
   background-image: url("../images/featured_image.JPG");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 3rem;
+  /* margin: 3rem; */
 }
 
 /* Retro Fonts */
@@ -215,6 +215,12 @@ h6 {
   display: flex;
   justify-content: left;
   border-right: 5px solid ivory;
+}
+
+/* Section CSS */
+
+.w-100 {
+  width: 100%;
 }
 
 /* About Me CSS */
@@ -371,7 +377,7 @@ h6 {
 
 /* Mobile Responsive */
 
-@media screen and (max-width: 1067px) {
+@media screen and (max-width: 1115px) {
   
   h4 {
     font-size: 2.5rem;
@@ -401,10 +407,6 @@ h6 {
     font-size: 1.8rem;
   }
 
-  .nav-list {
-    flex-direction: column;
-  }
-
 }
 
 @media screen and (max-width: 786px) {
@@ -426,11 +428,6 @@ h6 {
     max-width: 30%;
   }
 
-  .nav-list {
-    font-size: 3rem;
-    flex-direction: column;
-  }
-
 }
 
 @media screen and (max-width: 690px) {
@@ -446,17 +443,6 @@ h6 {
     flex-direction: column;
     border-right: 0px;
     border-bottom: 5px solid ivory;
-  }
-
-  .nav-list {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    flex: 0 1 20%;
-    font-size: 5rem;
   }
 
   .main-project .text-block,
