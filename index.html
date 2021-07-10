@@ -1,172 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="assests/images/favicon.ico"
+      type="image/x-icon"
+    />
 
     <title>Nathaniel Ehrlich</title>
-</head>
-<body>
+  </head>
+  <body>
     <figure class="bg"></figure>
     <header>
-        <div class="nav-icon">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-            <i class="fa fa-minus-square" aria-hidden="true"></i>
-        </div>
-        <nav class="nav-menu">
-            <ul class="nav-list">
-                <li>
-                    <a href="#home" class="nav-link retro">Home</a>
-                </li>
-                <li>
-                    <a href="#about-me" class="nav-link retro">About Me</a>
-                </li>
-                <li>
-                    <a href="#my-projects" class="nav-link retro">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact-me" class="nav-link retro">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="retro" id="home">
-            <h1 class="retro-body">Nathaniel Ehrlich</h1>
-            <h6>UI | UX Web Developer</h6>
-        </div>
-        <center><figure class="profile-image"></figure></center>
+      <div class="nav-icon">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <i class="fa fa-minus-square" aria-hidden="true"></i>
+      </div>
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li>
+            <a href="#home" class="nav-link retro">Home</a>
+          </li>
+          <li>
+            <a href="#about-me" class="nav-link retro">About Me</a>
+          </li>
+          <li>
+            <a href="#my-projects" class="nav-link retro">Projects</a>
+          </li>
+          <li>
+            <a href="#contact-me" class="nav-link retro">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="retro" id="home">
+        <h1 class="retro-body">Nathaniel Ehrlich</h1>
+        <h6>UI | UX Web Developer</h6>
+      </div>
+      <center><figure class="profile-image"></figure></center>
     </header>
 
-
     <main class="container">
-        <div class="row">
-            <aside class="left">
-                <div class="retro">
-                    <h3>
-                        ABOUT ME
-                    </h3>
+      <div class="row">
+        <aside class="left">
+          <div class="retro">
+            <h3>ABOUT ME</h3>
+          </div>
+        </aside>
+        <section>
+          <div class="about" id="about-me">
+            <p>
+              My name is Nathaniel Ehrlich and I am an aspiring Web UI / UX
+              Developer. I have 5 years experience with PHP in a data processing
+              environment and looking to combine my knowledge I learn with my DU
+              BootCamp classes and my experiencing with PHP to build and design
+              custom content.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="row">
+        <aside class="left">
+          <div class="retro">
+            <h3>PROJECTS</h3>
+          </div>
+        </aside>
+
+        <section>
+          <div id="my-projects">
+            <div class="main-project p-row">
+              <div class="column-main">
+                <a
+                  href="https://github.com/TechnoPrep/nwe-du-hw-01"
+                  target="_blank"
+                  ><img
+                    src="assets/images/project-main.png"
+                    alt="Refactor Site"
+                /></a>
+                <div class="text-block retro">
+                  <h4>Site Refactor</h4>
                 </div>
-            </aside>
-            <section>
-                <div class="about" id="about-me">
-                    <p>
-                        My name is Nathaniel Ehrlich and I am an aspiring Web UI / UX Developer. I have 5 years experience with PHP in a data processing environment and looking to combine my knowledge I learn with my DU BootCamp classes and my experiencing with PHP to build and design custom content.
-                    </p>
-                </div>
-            </section>
-        </div>
-
-        <div class="row">
-            <aside class="left">
-                <div class="retro">
-                    <h3>
-                        PROJECTS
-                    </h3>
-                </div>
-            </aside>
-
-            <section>
-                <div id="my-projects">
-                    <div class="main-project p-row">
-                        <div class="column-main">
-                            <a href="https://github.com/TechnoPrep/nwe-du-hw-01" target="_blank"><img src="assets/images/project-main.png"alt="Refactor Site"></a>
-                            <div class="text-block retro">
-                                <h4>Site Refactor</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sec-project p-row">
-                        <div class="column-sec">
-                            <a href="#"><img src="assets/images/project-1.png" target="_blank" alt="Game Design"></a>
-                            <div class="text-block retro">
-                                <h4>Javascript Game</h4>
-                            </div>
-                        </div>
-                        <div class="column-sec">
-                            <a href="#"><img src="assets/images/project-2.png" target="_blank" alt="PHP Development"></a>
-                            <div class="text-block retro">
-                                <h4>PHP Webpage</h4>
-                            </div>
-                        </div>
-                        <div class="column-sec">
-                            <a href="#"><img src="assets/images/project-3.png" target="_blank" alt="LED Wall"></a>
-                            <div class="text-block retro">
-                                <h4>LED Wall</h4>
-                            </div>
-                        </div>
-                        <div class="column-sec">
-                            <a href="#"><img src="assets/images/project-4.png" target="_blank" alt="Mobile App"></a>
-                            <div class="text-block retro">
-                                <h4>Mobile App</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <div class="row">
-
-            <aside class="left">
-                <div class="retro">
-                    <h3>
-                        CONTACT ME
-                    </h3>
-                </div>  
-            </aside>
-
-            <section>
-                
-                <div class="contact" id="contact-me">
-                    
-                    <ul class="contact-links">
-                        <li>
-                            <a href="tel:720-697-9293">
-                                <i class="fa fa-phone" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:nathan.ehrlich2621@gmail.com">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/DamnYankees">
-                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/TechnoPrep">
-                                <i class="fa fa-github" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    
-                </div>
-
-            </section>
-
-        </div>
-
-        <footer>
-            <div class="to-top">
-                <a href="#home">
-                    <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                </a>
+              </div>
             </div>
-        </footer>
+            <div class="sec-project p-row">
+              <div class="column-sec">
+                <a href="#"
+                  ><img
+                    src="assets/images/project-1.png"
+                    target="_blank"
+                    alt="Game Design"
+                /></a>
+                <div class="text-block retro">
+                  <h4>Javascript Game</h4>
+                </div>
+              </div>
+              <div class="column-sec">
+                <a href="#"
+                  ><img
+                    src="assets/images/project-2.png"
+                    target="_blank"
+                    alt="PHP Development"
+                /></a>
+                <div class="text-block retro">
+                  <h4>PHP Webpage</h4>
+                </div>
+              </div>
+              <div class="column-sec">
+                <a href="#"
+                  ><img
+                    src="assets/images/project-3.png"
+                    target="_blank"
+                    alt="LED Wall"
+                /></a>
+                <div class="text-block retro">
+                  <h4>LED Wall</h4>
+                </div>
+              </div>
+              <div class="column-sec">
+                <a href="#"
+                  ><img
+                    src="assets/images/project-4.png"
+                    target="_blank"
+                    alt="Mobile App"
+                /></a>
+                <div class="text-block retro">
+                  <h4>Mobile App</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
+      <div class="row">
+        <aside class="left">
+          <div class="retro">
+            <h3>CONTACT ME</h3>
+          </div>
+        </aside>
+
+        <section>
+          <div class="contact" id="contact-me">
+            <ul class="contact-links">
+              <li>
+                <a href="tel:720-697-9293">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:nathan.ehrlich2621@gmail.com">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/DamnYankees">
+                  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/TechnoPrep">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <div class="to-top">
+          <a href="#home">
+            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </footer>
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/javascript.js"></script>
-
-</body>
+  </body>
 </html>
