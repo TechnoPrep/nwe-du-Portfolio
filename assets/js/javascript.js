@@ -15,5 +15,3 @@ $(document).ready(function(){
         $('.fa-minus-square').toggleClass('open');
     });
 });
-
-document.getElementById("synthwave").volume = 0.03;
