@@ -93,6 +93,10 @@ h6 {
   font-size: 3rem;
 }
 
+.main-header {
+  margin-bottom: 2rem;
+}
+
 /* Nav Menu */
 
 .nav-icon {
