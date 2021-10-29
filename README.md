@@ -8,7 +8,7 @@ Motivation / Inspiration:
 ## Screenshot
 
 ![80's Synthwave Portfolio](https://github.com/TechnoPrep/nwe-du-Portfolio/blob/main/screenshots/80s_Synthwave_Portfolio.png)
-
+ 
 ## Website Address
 
 [Nathaniel's 80's Synthwave Portfolio](https://technoprep.github.io/nwe-du-Portfolio/)
