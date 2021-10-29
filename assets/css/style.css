@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 @import url(https://fonts.googleapis.com/css?family=Candal);
-
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
 
 @import url(https://fonts.googleapis.com/css?family=Monoton);
@@ -23,8 +23,6 @@ body {
   ;
   background: #0D0221;
   color: #fff;
-  /* position: relative; */
-
 }
 
 
@@ -33,7 +31,8 @@ a {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-family: 'Lato', sans-serif;
 }
 
 ul {
@@ -78,6 +77,7 @@ h6 {
   position: relative;
   justify-content: center;
   align-items: center;
+  font-weight: 1000;
 }
 
 h1 {
@@ -88,7 +88,10 @@ h3 {
   font-size: 5rem;
 }
 
-h4,
+h4 {
+  font-size: 2.5rem;
+}
+
 h6 {
   font-size: 3rem;
 }
@@ -126,7 +129,6 @@ h6 {
 }
 
 .nav-link {
-  width: 20%;
   font-weight: 700;
   padding: 2rem;
 }
@@ -143,11 +145,13 @@ h6 {
 .profile-image {
   position: relative;
   display: block;
-  width: 600px;
-  height: 600px;
+  width: 350px;
+  height: 350px;
   background-image: url("../images/featured_image.JPG");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: .8;
+  border-radius: 50%;
   /* margin: 3rem; */
 }
 
@@ -159,6 +163,7 @@ h6 {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0.1px #f1f1f1;
   font-family: 'Righteous', cursive;
+  font-weight: 1000;
 }
 
 .retro h4 {
@@ -181,11 +186,6 @@ h6 {
 
 /* Container and Column / Row Alignments */
 
-.container {
-  display: block;
-  position: absolute;
-}
-
 .row {
   display: flex;
   flex-direction: row;
@@ -194,14 +194,12 @@ h6 {
   padding-left: 5%
 }
 
-.p-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+
 
 .column-main {
   max-width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .column-sec {
@@ -218,10 +216,6 @@ h6 {
 
 /* Aside - Float Left*/
 .left {
-  min-width: 30%;
-  max-width: 30%;
-  display: flex;
-  justify-content: left;
   border-right: 5px solid ivory;
 }
 
@@ -240,30 +234,24 @@ h6 {
 /* Project Section CSS */
 
 .main-project {
-  justify-content: center;
-  flex: 0 0 50%;
-  max-width: 100%;
-  padding: 2rem;
-  position: relative;
-}
+  padding-top: 2%;
+  padding-bottom: 2%;
+  max-width: 70%;
 
-.sec-project {
-  display: flex;
-  justify-content: center;
 }
 
 /* Image Text Block Styles */
 
 .main-project .text-block {
-  bottom: 20px;
-  right: 30px;
+  bottom: 30px;
+  right: 130px;
   padding-left: 30px;
   padding-right: 30px;
 }
 
 .column-sec .text-block {
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 10px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -373,9 +361,10 @@ h6 {
 
 .fa-phone::before,
 .fa-envelope::before,
-.fa-facebook-official::before,
+.fa-linkedin-square::before,
 .fa-github::before,
-.fa-chevron-up::before {
+.fa-chevron-up::before,
+.fa-file-text-o::before {
   font-size: 5rem;
   padding-right: 10px;
   color: #fc459f;
@@ -386,6 +375,11 @@ h6 {
 /* Mobile Responsive */
 
 @media screen and (max-width: 1115px) {
+
+  .nav-link {
+    font-weight: 700;
+    padding: 1rem;
+  }
   
   h4 {
     font-size: 2.5rem;
@@ -398,9 +392,9 @@ h6 {
 
 @media screen and (max-width: 992px) {
 
-  .left {
+  /* .left {
     max-width: 30%;
-  }
+  } */
 
   .retro h4 {
     -webkit-text-fill-color: #fff;
@@ -432,25 +426,42 @@ h6 {
     -webkit-text-fill-color: #fff;
   }
 
-  .left {
-    max-width: 30%;
+  .main-project .text-block {
+    right: 70px;
   }
 
 }
 
 @media screen and (max-width: 690px) {
 
+  .bg {
+    width: 400px;
+    height: 400px;
+    left: 20.65%;
+  }
+
   .row {
     padding-left: 0%;
     flex-direction: column;
   }
 
+  .col-12 {
+    margin-left: 7.5px;
+  }
+
+  .col-4,
+  .col-8 {
+    width: 100%;
+    padding: 0px;
+  }
+
   .left {
-    float: none;
-    max-width: 100%;
-    flex-direction: column;
     border-right: 0px;
     border-bottom: 5px solid ivory;
+  }
+
+  .main-project {
+    padding-top: 5%;
   }
 
   .main-project .text-block,
@@ -462,6 +473,17 @@ h6 {
 }
 
 @media screen and (max-width: 550px) {
+
+  .bg {
+    width: 400px;
+    height: 400px;
+    left: 13.5%;
+  }
+
+  .col-12 {
+    padding: 10px;
+    margin-left: 0px;
+  }
 
   h1 {
     font-size: 8rem;
