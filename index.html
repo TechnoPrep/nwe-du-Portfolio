@@ -13,6 +13,12 @@
     />
 
     <!-- Style Sheets -->
+            <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./assets/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
@@ -27,7 +33,6 @@
     <title>Nathaniel Ehrlich</title>
   </head>
   <body class="w-100">
-
     <figure class="bg"></figure>
     <header class="w-100">
       <div class="nav-icon" id="home">
@@ -35,7 +40,7 @@
         <i class="fa fa-minus-square" aria-hidden="true"></i>
       </div>
       <nav class="nav-menu">
-        <ul class="nav-list">
+        <ul class="nav-list d-flex justify-content-center">
           <li>
             <a href="#home" class="nav-link retro">Home</a>
           </li>
@@ -52,98 +57,74 @@
       </nav>
       <div class="retro main-header">
         <h1 class="retro-body">Nathaniel Ehrlich</h1>
-        <h6>UI | UX Web Developer</h6>
+        <h6>Server-Side Developer</h6>
       </div>
       <center><figure class="profile-image"></figure></center>
     </header>
 
-    <main class="container">
-      <div class="row">
-        <aside class="left">
-          <div class="retro">
-            <h3>ABOUT ME</h3>
+    <main class="">
+      <div class="row col-12">
+        <aside class="col-4 left d-flex justify-content-center align-items-center">
+          <div class="">
+            <h3 class="retro col-12 d-flex justify-content-center">ABOUT ME</h3>
           </div>
         </aside>
-        <section class="w-100">
+        <section class="col-8">
           <div class="about" id="about-me">
             <p>
-              My name is Nathaniel Ehrlich and I am an aspiring Web UI / UX
-              Developer. I have 5 years experience with PHP in a data processing
-              environment and looking to combine my knowledge I learn with my DU
-              BootCamp classes and my experiencing with PHP to build and design
-              custom content.
+              My name is Nathaniel Ehrlich and I am current an Applications
+              Administrator, but also an aspiring Back-End Web Developer. I have
+              5 years experience with PHP and MSSQL in a data processing
+              environment I am looking to combine with what have I learned in my
+              Denver University BootCamp to become a Back-End Developer.
             </p>
           </div>
         </section>
       </div>
 
-      <div class="row">
-        <aside class="left">
-          <div class="retro">
-            <h3>PROJECTS</h3>
+
+      <div class="row col-12">
+        <aside class="col-4 left d-flex justify-content-center align-items-top">
+          <div class="">
+            <h3 class="retro col-12 d-flex justify-content-center">PROJECTS</h3>
           </div>
         </aside>
 
-        <section class="w-100">
-          <div id="my-projects">
-            <div class="main-project p-row">
-              <div class="column-main">
-                <a
-                  href="https://github.com/TechnoPrep/cairn"
-                  target="_blank"
+        <section class="col-8">
+          <div id="my-projects" class="">
+            <div class="position-relative d-flex justify-content-center">
+              <div class="main-project">
+                <a class="" href="https://github.com/LoopySquare/Remindr" target="_blank"
                   ><img
-                    src="assets/images/Cairn.png"
+                    src="assets/images/remindr_logo.png"
                     alt="Cairn - National Park API"
                 /></a>
                 <div class="text-block retro">
-                  <h4>Cairn - National Park API
-                  </h4>
+                  <h4>Remindr Notifications</h4>
                 </div>
               </div>
             </div>
-            <div class="sec-project p-row">
+            <div class="sec-project position-relative d-flex flex-wrap justify-content-center">
               <div class="column-sec">
-                <a href="#"
+                <a href="https://github.com/TechnoPrep/cairn"
                   ><img
-                    src="assets/images/project-1.png"
+                    src="assets/images/Cairn.png"
                     target="_blank"
-                    alt="Game Design"
+                    alt="Cairn - National Park API"
                 /></a>
                 <div class="text-block retro">
-                  <h4>Javascript Game</h4>
+                  <h4>Park API</h4>
                 </div>
               </div>
               <div class="column-sec">
-                <a href="#"
+                <a href="https://github.com/TechnoPrep/ecommerce-backend-sequelize "
                   ><img
-                    src="assets/images/project-2.png"
+                    src="assets/images/E-Commerce.png"
                     target="_blank"
                     alt="PHP Development"
                 /></a>
                 <div class="text-block retro">
-                  <h4>PHP Webpage</h4>
-                </div>
-              </div>
-              <div class="column-sec">
-                <a href="#"
-                  ><img
-                    src="assets/images/project-3.png"
-                    target="_blank"
-                    alt="LED Wall"
-                /></a>
-                <div class="text-block retro">
-                  <h4>LED Wall</h4>
-                </div>
-              </div>
-              <div class="column-sec">
-                <a href="#"
-                  ><img
-                    src="assets/images/project-4.png"
-                    target="_blank"
-                    alt="Mobile App"
-                /></a>
-                <div class="text-block retro">
-                  <h4>Mobile App</h4>
+                  <h4>E-Commerce Back End</h4>
                 </div>
               </div>
             </div>
@@ -151,14 +132,14 @@
         </section>
       </div>
 
-      <div class="row">
-        <aside class="left">
-          <div class="retro">
-            <h3>CONTACT ME</h3>
+      <div class="row col-12">
+        <aside class="col-4 left d-flex justify-content-center align-items-top">
+          <div class="">
+            <h3 class="retro col-12 d-flex justify-content-center">CONTACT ME</h3>
           </div>
         </aside>
 
-        <section class="w-100">
+        <section class="col-8">
           <div class="contact" id="contact-me">
             <ul class="contact-links">
               <li>
@@ -167,18 +148,23 @@
                 </a>
               </li>
               <li>
-                <a href="mailto:nathan.ehrlich2621@gmail.com">
+                <a href="mailto:nwehrlich@gmail.com">
                   <i class="fa fa-envelope" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a href="https://www.facebook.com/DamnYankees" target="_blank">
-                  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <a href="https://www.linkedin.com/in/nathaniel-ehrlich-018758121/" target="_blank">
+                  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
                 <a href="https://github.com/TechnoPrep" target="_blank">
                   <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://drive.google.com/file/d/1aDX1wMGGgIAt_D8zZ5PZtZ4zUZ1NdXx2/view" target="_blank">
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
                 </a>
               </li>
             </ul>
